@@ -20,7 +20,7 @@
       <div class="flex items-start md:-mx-4">
         <div class="lg:w-1/2 relative img-apertura md:px-4 img-apertura">
           <img
-            src="https://m73pz1boayr.preview.infomaniak.website/wp-content/uploads/2025/01/instaRisorsa-2-100.jpg"
+            src="https://www.riccardobasso.com//wp-content/uploads/2025/01/instaRisorsa-2-100.jpg"
             alt="Riccardo Basso"
           />
         </div>
