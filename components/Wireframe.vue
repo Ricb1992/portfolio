@@ -1,6 +1,7 @@
 <template>
   <div class="wireframe-container">
-    <div class="header"></div>
+    <WireframeNavBar></WireframeNavBar>
+    <WireframeCopertina></WireframeCopertina>
     <div class="main">
       <div class="sidebar"></div>
       <div class="content"></div>

@@ -6,11 +6,11 @@
         <span class="minimize"></span>
         <span class="maximize"></span>
       </div>
-      <span class="title">Visual Studio Code</span>
+      <span class="title">Portfolio di Riccardo Basso</span>
     </div>
     <div class="editor text-center flex items-center h-screen">
-      <pre>
-          <code ref="codeLine" class="text-3xl"><span class="text-[#CE9178]">console</span>.<span>log</span>(<span class="text-[#800000]">'hello world'</span>);</code>
+      <pre class="text-center block">
+          <code ref="codeLine" class="text-3xl "><span class="text-[#CE9178]">console</span>.<span>log</span>(<span class="text-[#800000]">'hello world'</span>);</code>
         </pre>
     </div>
   </div>
