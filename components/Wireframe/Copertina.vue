@@ -3,7 +3,7 @@
     id="copertina"
     class="min-h-screen pb-10 w-full bg-slate-100 flex items-center py-10"
   >
-    <div class="w-1/2 mx-auto">
+    <div class="md:w-1/2 mx-auto md:px-0 px-6vw">
       <div class="relative">
         <h1
           id="title"
@@ -17,14 +17,18 @@
         </p>
       </div>
 
-      <div class="flex items-start md:-mx-4">
-        <div class="lg:w-1/2 relative img-apertura md:px-4 img-apertura">
+      <div class="md:flex items-start md:-mx-4">
+        <div
+          class="md:w-1/2 w-[60%] relative img-apertura md:px-4 img-apertura md:pl-0 pl-[10%]"
+        >
           <img
             src="https://www.riccardobasso.com//wp-content/uploads/2025/01/instaRisorsa-2-100.jpg"
             alt="Riccardo Basso"
           />
         </div>
-        <div class="lg:w-1/2 md:px-4">
+        <div
+          class="md:w-1/2 md:px-4 textline md:mt-0 mt-8 md:pl-0 pl-[20%] md:pr-0 pr-3vw"
+        >
           <p ref="textLine" class="textline">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat

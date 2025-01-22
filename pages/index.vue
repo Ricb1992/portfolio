@@ -64,7 +64,7 @@ const nextStage = () => {
       },
     });
     if (currentStage.value === 0) {
-      tl.to(`.container .fade-enter-active`, { opacity: 0, duration: 1 });
+      tl.to(`.container .fade-enter-active`, { opacity: 0, duration: 2 });
     }
 
     tl.call(() => {
@@ -72,7 +72,7 @@ const nextStage = () => {
       currentComponent.value = components[currentStage.value];
     });
 
-    tl.to(`.container .fade-enter-active`, { opacity: 1, duration: 1 });
+    tl.to(`.container .fade-enter-active`, { opacity: 1, duration: 2 });
   }
 };
 

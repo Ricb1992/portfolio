@@ -8,10 +8,15 @@
       </div>
       <span class="title">Portfolio di Riccardo Basso</span>
     </div>
-    <div class="editor text-center flex items-center h-screen">
-      <pre class="text-center block">
-          <code ref="codeLine" class="text-3xl "><span class="text-[#CE9178]">console</span>.<span>log</span>(<span class="text-[#800000]">'hello world'</span>);</code>
-        </pre>
+    <div class="editor md:text-center flex items-center h-screen w-full">
+      <div class="block">
+        <code ref="codeLine" class="md:text-3xl"
+          ><span class="text-[#CE9178]">console</span>.<span>log</span>(<span
+            class="text-[#800000]"
+            >'hello world'</span
+          >);</code
+        >
+      </div>
     </div>
   </div>
 </template>
