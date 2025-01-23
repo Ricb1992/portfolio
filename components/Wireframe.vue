@@ -1,5 +1,5 @@
 <template>
-  <div class="wireframe-container">
+  <div class="wireframe-container opacity-0">
     <WireframeNavBar></WireframeNavBar>
     <WireframeCopertina></WireframeCopertina>
     <div class="main">
@@ -8,6 +8,15 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { gsap } from "gsap";
+onMounted(() => {
+  var tl = gsap.timeline({ defaults: { duration: 0.5 } });
+  tl.to(".wireframe-container", { opacity: 1, duration: 1 });
+  tl.to(".wireframe-container", { opacity: 0, duration: 1 });
+});
+</script>
 
 <style scoped>
 .wireframe-container {

@@ -67,7 +67,7 @@ onMounted(() => {
       stagger: 0.1,
       scrollTrigger: {
         trigger: ".page-content",
-        start: "top 130%",
+        start: "top 120%",
       },
     });
 
