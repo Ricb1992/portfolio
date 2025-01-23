@@ -48,9 +48,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(TextPlugin);
-gsap.registerPlugin(ScrollTrigger);
-
 const props = defineProps({
   pageContent: String,
   skills: Array,
@@ -58,6 +55,9 @@ const props = defineProps({
 
 onMounted(() => {
   try {
+    gsap.registerPlugin(TextPlugin);
+    gsap.registerPlugin(ScrollTrigger);
+
     gsap.from(".page-content", {
       y: "50%",
       opacity: 0,

@@ -33,8 +33,6 @@ import axios from "axios";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const esperienze = ref([]);
 const error = ref(null);
 
@@ -62,6 +60,8 @@ const fetchExps = async (retries = 3) => {
 };
 
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
   fetchExps().then(() => {
     //animazione esperienze
     const exps = document.querySelectorAll(".an-exp");

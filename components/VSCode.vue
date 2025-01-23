@@ -26,11 +26,11 @@ import { ref, onMounted } from "vue";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(TextPlugin);
-
-const codeLine = ref(null);
-
 onMounted(() => {
+  gsap.registerPlugin(TextPlugin);
+
+  const codeLine = ref(null);
+
   const text = codeLine.value.innerText;
   codeLine.value.innerText = "";
   gsap.to(

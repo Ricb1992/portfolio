@@ -23,8 +23,6 @@ import axios from "axios";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const skills = ref([]);
 const error = ref(null);
 
@@ -52,6 +50,8 @@ const fetchSkills = async (retries = 3) => {
 
 onMounted(() => {
   fetchSkills().then(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     // fissare titolo sezione in alto
     gsap.to(".competenze", {
       scrollTrigger: {

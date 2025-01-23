@@ -53,13 +53,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(TextPlugin);
-gsap.registerPlugin(ScrollTrigger);
-
 export default {
   setup() {
     onMounted(() => {
       try {
+        gsap.registerPlugin(TextPlugin);
+        gsap.registerPlugin(ScrollTrigger);
+
         var tl = gsap.timeline({ defaults: { duration: 0.5 } });
         tl.from(".titolo", {
           y: "150%",

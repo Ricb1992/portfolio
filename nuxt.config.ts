@@ -8,4 +8,9 @@ export default defineNuxtConfig({
       baseUrl: "https://riccardobasso.com",
     },
   },
+  router: {
+    options: {
+      scrollBehaviorType: "smooth",
+    },
+  },
 });
