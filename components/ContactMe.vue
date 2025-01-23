@@ -32,7 +32,7 @@
             </li>
             <li>
               <nuxt-link
-                to="https://www.riccardobasso.com//wp-content/uploads/2025/01/cv-Riccardo-Basso.pdf"
+                to="https://www.riccardobasso.com/wp-content/uploads/2025/01/cv-Riccardo-Basso.pdf"
                 class="hover:underline"
                 >Download CV</nuxt-link
               >
@@ -46,7 +46,7 @@
             Non esitare a contattarmi!
           </p>
           <nuxt-link
-            to="https://www.riccardobasso.com//wp-content/uploads/2025/01/cv-Riccardo-Basso.pdf"
+            to="https://www.riccardobasso.com/wp-content/uploads/2025/01/cv-Riccardo-Basso.pdf"
             class="px-8 py-3 rounded-xl mt-4 inline-block bg-blu border-2 border-blu text-bianco hover:bg-transparent hover:text-blu transition-all duration-300"
             target="_blank"
             >Download CV</nuxt-link

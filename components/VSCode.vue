@@ -26,24 +26,24 @@ import { ref, onMounted } from "vue";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
+const codeLine = ref(null);
+
 onMounted(() => {
   gsap.registerPlugin(TextPlugin);
 
-  const codeLine = ref(null);
-
-  const text = codeLine.value.innerText;
-  codeLine.value.innerText = "";
-  gsap.to(
-    codeLine.value,
-
-    {
+  if (codeLine.value) {
+    const text = codeLine.value.innerText;
+    codeLine.value.innerText = "";
+    gsap.to(codeLine.value, {
       opacity: 1,
       duration: text.length * 0.1,
       text: { value: text },
       ease: "none",
       delay: 0.5,
-    }
-  );
+    });
+  } else {
+    console.error("codeLine reference is not set.");
+  }
 });
 </script>
 

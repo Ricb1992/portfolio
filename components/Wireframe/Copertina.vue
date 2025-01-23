@@ -22,7 +22,7 @@
           class="md:w-1/2 w-[60%] relative img-apertura md:px-4 img-apertura md:pl-0 pl-[10%]"
         >
           <img
-            src="https://www.riccardobasso.com//wp-content/uploads/2025/01/instaRisorsa-2-100.jpg"
+            src="https://www.riccardobasso.com/wp-content/uploads/2025/01/instaRisorsa-2-100.jpg"
             alt="Riccardo Basso"
           />
         </div>

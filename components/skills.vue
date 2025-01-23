@@ -17,9 +17,9 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import { ref, onMounted } from "vue";
-import axios from "axios";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -31,11 +31,19 @@ const fetchSkills = async (retries = 3) => {
   const apiEndpoint = "https://www.riccardobasso.com/wp-json/wp/v2/pages/2";
 
   try {
-    const response = await axios.get(apiEndpoint);
-    const skillsData = response.data.acf.competenze || [];
+    const response = await fetch(apiEndpoint);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    if (!data.acf || !data.acf.competenze) {
+      throw new Error("Competenze data is not available in the API response.");
+    }
+    const skillsData = data.acf.competenze || [];
     skills.value = skillsData.map((skill, index) => ({
       ...skill,
       id: index,
+      rendered: skill.rendered || "", // Ensure rendered property is available
     }));
   } catch (err) {
     if (retries > 0) {

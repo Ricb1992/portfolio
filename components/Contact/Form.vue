@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <form
-      action="https://www.riccardobasso.com///wp-json/contact-form-7/v1/contact-forms/87/feedback"
+      action="https://www.riccardobasso.com/wp-json/contact-form-7/v1/contact-forms/87/feedback"
       method="post"
     >
       <input type="hidden" name="_wpcf7" value="87" />

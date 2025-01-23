@@ -93,7 +93,7 @@ const checkCookie = () => {
 };
 
 const fetchPageData = async (retries = 3) => {
-  const apiEndpoint = "https://www.riccardobasso.com//wp-json/wp/v2/pages/2";
+  const apiEndpoint = "https://www.riccardobasso.com/wp-json/wp/v2/pages/2";
 
   try {
     const response = await axios.get(apiEndpoint);
@@ -182,7 +182,7 @@ useHead({
     {
       property: "og:image",
       content:
-        "https://www.riccardobasso.com//wp-content/uploads/2025/01/riccardo-basso-portfolio.jpg",
+        "https://www.riccardobasso.com/wp-content/uploads/2025/01/riccardo-basso-portfolio.jpg",
     },
     {
       property: "og:url",
