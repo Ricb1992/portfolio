@@ -38,7 +38,7 @@ const error = ref(null);
 
 //fetch data
 const fetchExps = async (retries = 3) => {
-  const apiEndpoint = "https://www.riccardobasso.com//wp-json/wp/v2/pages/2";
+  const apiEndpoint = "https://www.riccardobasso.com/wp-json/wp/v2/pages/2";
 
   try {
     const response = await axios.get(apiEndpoint);

@@ -26,7 +26,7 @@ const posts = ref([]);
 
 const fetchPageData = async (retries = 3) => {
   const apiEndpoint =
-    "https://www.riccardobasso.com//wp-json/wp/v2/posts?_embed";
+    "https://www.riccardobasso.com/wp-json/wp/v2/posts?_embed";
 
   try {
     const response = await axios.get(apiEndpoint);
