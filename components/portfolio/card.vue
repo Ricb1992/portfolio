@@ -36,6 +36,7 @@
               data.title.rendered
             }}</nuxt-link>
           </h3>
+          <p class="text-[12px]">Progetto sviluppato in Rebula Srl</p>
         </div>
       </div>
     </div>
